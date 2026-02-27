@@ -387,6 +387,16 @@ body {
     margin-bottom: 1rem;
 }
 
+.service-icon svg {
+    width: 48px;
+    height: 48px;
+    stroke: var(--red);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 .service-card h3 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -579,6 +589,16 @@ body {
 .contact-icon {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+.contact-icon svg {
+    width: 48px;
+    height: 48px;
+    stroke: var(--blue);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 .contact-card h3 {
