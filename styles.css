@@ -194,7 +194,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #fafafa 0%, var(--white) 100%);
+    background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
     padding: 6rem 0;
     position: relative;
     overflow: hidden;
@@ -210,17 +210,17 @@ body {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 50%, rgba(227, 30, 36, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 80% 50%, rgba(46, 49, 146, 0.05) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(227, 30, 36, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(46, 49, 146, 0.03) 0%, transparent 50%);
 }
 
-/* Paint Splatters - Subtle dots */
+/* Paint Splatters - More visible dots */
 .paint-splash {
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .left-splash {
@@ -228,13 +228,16 @@ body {
     left: 10%;
     background: var(--red);
     box-shadow: 
-        50px 80px 0 -2px var(--red),
-        120px 40px 0 -3px var(--red),
-        80px 150px 0 -1px var(--red),
-        30px 200px 0 -2px var(--blue),
-        150px 180px 0 -3px var(--blue),
-        200px 100px 0 -2px var(--red),
-        180px 250px 0 -1px var(--blue);
+        50px 80px 0 -1px var(--red),
+        120px 40px 0 -2px var(--red),
+        80px 150px 0 0px var(--red),
+        30px 200px 0 -1px var(--blue),
+        150px 180px 0 -2px var(--blue),
+        200px 100px 0 -1px var(--red),
+        180px 250px 0 0px var(--blue),
+        90px 50px 0 -3px var(--red),
+        160px 120px 0 -2px var(--blue),
+        40px 90px 0 -1px var(--red);
 }
 
 .right-splash {
@@ -242,13 +245,16 @@ body {
     right: 10%;
     background: var(--blue);
     box-shadow: 
-        -50px -80px 0 -2px var(--blue),
-        -120px -40px 0 -3px var(--blue),
-        -80px -150px 0 -1px var(--blue),
-        -30px -200px 0 -2px var(--red),
-        -150px -180px 0 -3px var(--red),
-        -200px -100px 0 -2px var(--blue),
-        -180px -250px 0 -1px var(--red);
+        -50px -80px 0 -1px var(--blue),
+        -120px -40px 0 -2px var(--blue),
+        -80px -150px 0 0px var(--blue),
+        -30px -200px 0 -1px var(--red),
+        -150px -180px 0 -2px var(--red),
+        -200px -100px 0 -1px var(--blue),
+        -180px -250px 0 0px var(--red),
+        -90px -50px 0 -3px var(--blue),
+        -160px -120px 0 -2px var(--red),
+        -40px -90px 0 -1px var(--blue);
 }
 
 .hero-content {
@@ -280,27 +286,6 @@ body {
     color: var(--gray);
     margin-bottom: 2.5rem;
     font-weight: 500;
-}
-
-.hero-trust {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 1.5rem 2rem;
-    border-radius: 12px;
-    margin-bottom: 2.5rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    border-left: 4px solid var(--red);
-}
-
-.hero-trust p {
-    font-size: 1.1rem;
-    color: var(--text);
-    font-weight: 600;
-    margin: 0;
-}
-
-.hero-trust .highlight {
-    color: var(--red);
-    font-weight: 700;
 }
 
 .hero-cta {
@@ -452,43 +437,19 @@ body {
     overflow: hidden;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    background: var(--gray-light);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .gallery-item:hover {
     transform: scale(1.05);
-}
-
-.gallery-item.placeholder {
-    background: linear-gradient(135deg, var(--red) 0%, var(--blue) 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.placeholder-content {
-    text-align: center;
-    color: var(--white);
-}
-
-.placeholder-icon {
-    font-size: 4rem;
-    display: block;
-    margin-bottom: 1rem;
-}
-
-.placeholder-content p {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.gallery-note {
-    text-align: center;
-    color: var(--gray);
-    font-style: italic;
-    padding: 1.5rem;
-    background: var(--white);
-    border-radius: 8px;
-    border-left: 4px solid var(--red);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 /* About Section */
